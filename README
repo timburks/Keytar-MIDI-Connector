@@ -1,5 +1,10 @@
-Maps a RockBand 3 Keyboard's USB dongle HID events to MIDI events.
+Maps a Wii RockBand 3 Keyboard's USB dongle HID events to Mac OS X MIDI events.
 
 Plug in the dongle before launching the application.
 
 (The whole thing needs lots of work. But it does the job.)
+
+This allows you to use your Wii RockBand 3 Keyboard with Garageband or
+the marvelous Synthesia [ http://www.synthesiagame.com/ ].
+
+Share and Enjoy!
