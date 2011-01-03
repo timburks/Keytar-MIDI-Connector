@@ -169,9 +169,9 @@
 	F319615712D11E2000130E88 /* hidutil.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            l = \"CFDictionaryRef matching\";\n            r = \"{4064, 28}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 4468}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {964, 1620}}";
-			sepNavSelRange = "{4422, 0}";
-			sepNavVisRange = "{2981, 1009}";
+			sepNavIntBoundsRect = "{{0, 0}, {964, 1680}}";
+			sepNavSelRange = "{4343, 0}";
+			sepNavVisRange = "{3992, 449}";
 		};
 	};
 	F319618D12D164F900130E88 /* XCBuildMessageTextBookmark */ = {

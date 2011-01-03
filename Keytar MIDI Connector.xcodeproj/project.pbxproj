@@ -16,6 +16,8 @@
 		F319615212D11DF200130E88 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F319615112D11DF200130E88 /* CoreMIDI.framework */; };
 		F319615512D11E1000130E88 /* midiutil.c in Sources */ = {isa = PBXBuildFile; fileRef = F319615412D11E1000130E88 /* midiutil.c */; };
 		F319615812D11E2000130E88 /* hidutil.m in Sources */ = {isa = PBXBuildFile; fileRef = F319615712D11E2000130E88 /* hidutil.m */; };
+		F31961F112D1754900130E88 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F31961EF12D1754900130E88 /* LICENSE */; };
+		F31961F212D1754900130E88 /* README in Resources */ = {isa = PBXBuildFile; fileRef = F31961F012D1754900130E88 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		F319615412D11E1000130E88 /* midiutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = midiutil.c; sourceTree = "<group>"; };
 		F319615612D11E2000130E88 /* hidutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hidutil.h; sourceTree = "<group>"; };
 		F319615712D11E2000130E88 /* hidutil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hidutil.m; sourceTree = "<group>"; };
+		F31961EF12D1754900130E88 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F31961F012D1754900130E88 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				F31961EF12D1754900130E88 /* LICENSE */,
+				F31961F012D1754900130E88 /* README */,
 				256AC3F00F4B6AF500CF3369 /* Keytar_MIDI_Connector_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				F319615312D11E1000130E88 /* midiutil.h */,
@@ -179,6 +185,8 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				F31961F112D1754900130E88 /* LICENSE in Resources */,
+				F31961F212D1754900130E88 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,5 @@
+Maps a RockBand 3 Keyboard's USB dongle HID events to MIDI events.
+
+Plug in the dongle before launching the application.
+
+(The whole thing needs lots of work. But it does the job.)
