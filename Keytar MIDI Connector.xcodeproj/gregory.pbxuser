@@ -79,6 +79,10 @@
 			F31961D012D16F2E00130E88 /* PBXTextBookmark */ = F31961D012D16F2E00130E88 /* PBXTextBookmark */;
 			F31961D512D16F5700130E88 /* PBXTextBookmark */ = F31961D512D16F5700130E88 /* PBXTextBookmark */;
 			F31961D612D16F5700130E88 /* PBXTextBookmark */ = F31961D612D16F5700130E88 /* PBXTextBookmark */;
+			F31961D712D170D500130E88 /* PBXTextBookmark */ = F31961D712D170D500130E88 /* PBXTextBookmark */;
+			F31961D812D170D500130E88 /* PBXTextBookmark */ = F31961D812D170D500130E88 /* PBXTextBookmark */;
+			F31961D912D170D500130E88 /* PBXTextBookmark */ = F31961D912D170D500130E88 /* PBXTextBookmark */;
+			F31961DA12D170D500130E88 /* PBXTextBookmark */ = F31961DA12D170D500130E88 /* PBXTextBookmark */;
 		};
 		sourceControlManager = F319614C12D11D0800130E88 /* Source Control */;
 		userBuildSettings = {
@@ -365,6 +369,46 @@
 		vrLoc = 893;
 	};
 	F31961D612D16F5700130E88 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F319615312D11E1000130E88 /* midiutil.h */;
+		name = "midiutil.h: 13";
+		rLen = 0;
+		rLoc = 229;
+		rType = 0;
+		vrLen = 306;
+		vrLoc = 0;
+	};
+	F31961D712D170D500130E88 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F319615412D11E1000130E88 /* midiutil.c */;
+		name = "midiutil.c: 49";
+		rLen = 0;
+		rLoc = 1477;
+		rType = 0;
+		vrLen = 596;
+		vrLoc = 893;
+	};
+	F31961D812D170D500130E88 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* Keytar_MIDI_ConnectorAppDelegate.h */;
+		name = "Keytar_MIDI_ConnectorAppDelegate.h: 9";
+		rLen = 23;
+		rLoc = 175;
+		rType = 0;
+		vrLen = 358;
+		vrLoc = 0;
+	};
+	F31961D912D170D500130E88 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* Keytar_MIDI_ConnectorAppDelegate.h */;
+		name = "Keytar_MIDI_ConnectorAppDelegate.h: 9";
+		rLen = 23;
+		rLoc = 175;
+		rType = 0;
+		vrLen = 358;
+		vrLoc = 0;
+	};
+	F31961DA12D170D500130E88 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = F319615312D11E1000130E88 /* midiutil.h */;
 		name = "midiutil.h: 13";
