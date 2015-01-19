@@ -1,5 +1,3 @@
-This is a fork of the original:
-
 Maps a Wii RockBand 3 Keyboard's USB dongle HID events to Mac OS X MIDI events.
 
 Plug in the dongle before launching the application.
