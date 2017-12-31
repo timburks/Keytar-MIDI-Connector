@@ -9,6 +9,7 @@
 
 #include "hidutil.h"
 #include "midiutil.h"
+#include "stdio.h"
 
 #import <IOKit/hid/IOHIDLib.h>
 #import <IOKit/hid/IOHIDBase.h>
@@ -27,8 +28,22 @@ IOHIDDeviceRef deviceRef;
 #define HIGHREG_COOKIE 0x14 // Cookie 0x14 E4-B5
 #define VELOCITY_COOKIE 0x15 // Cookie 0x15 Velocity & C5
 
+#define BUTTON_1_COOKIE 0x02 // Cookie for Button 1 (down octave)
+#define BUTTON_2_COOKIE 0x05 // Cookie for Button 2 (Not Yet Implemented)
+#define BUTTON_A_COOKIE 0x03 // Cookie for Button A (Not Yet Implemented)
+#define BUTTON_B_COOKIE 0x04 // Cookie for Button B (up octave)
+
 uint8_t keystate[4] = {0x00, 0x00, 0x00, 0x00};
+// state of the 4 main buttons
+bool buttonKeystate[4] = {false, false, false, false};
 uint8_t velocity = 0;
+
+// keyboard starts in octave 4, this gets changed by button presses
+int octave = 4;
+
+// min and max octives...  10 octives in midi, 
+const int minOctave = 0;
+const int maxOctave = 10;
 
 //HID Event Handling
 void hid_element_value_callback (void *          inContext, 
@@ -59,7 +74,7 @@ void hid_element_value_callback (void *          inContext,
             
             
         if (updates) {
-            uint8_t base_note = 48 + (index * 8);
+            uint8_t base_note = (octave * 12) + (index * 8);
             if (0x80 & updates) note_event(base_note, velocity, 0x80 & keystate[index]);
             if (0x40 & updates) note_event(base_note + 1, velocity, 0x40 & keystate[index]);
             if (0x20 & updates) note_event(base_note + 2, velocity, 0x20 & keystate[index]);
@@ -71,6 +86,22 @@ void hid_element_value_callback (void *          inContext,
                 
             // XXX - should pack the midi events
             // XXX there are cleaner ways to do this.
+        }
+    } else if (etype == kIOHIDElementTypeInput_Button &&
+		(ecookie == BUTTON_1_COOKIE ||
+		 ecookie == BUTTON_B_COOKIE)) {
+        // One of the buttons (1,2,A,B)
+        int index = (int) ecookie - BUTTON_1_COOKIE;
+        // Happens once on "button press" and once for "button release" - only trigger on button press
+        buttonKeystate[index] = !buttonKeystate[index];
+
+        if (buttonKeystate[index]) {
+        	if (ecookie == BUTTON_1_COOKIE && octave > minOctave) {
+        		octave = octave-1;
+        	}
+        	if (ecookie == BUTTON_B_COOKIE && octave < maxOctave) {
+        		octave = octave+1;
+        	}
         }
     }
 }
